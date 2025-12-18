@@ -31,7 +31,7 @@ include "deletePatient.php";
     <main class="flex-1 ml-64 overflow-y-auto">
 
       
-        <header class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-10">
+        <header class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-10 bg-gray-100">
             <h1 class="text-xl font-semibold text-gray-800">Patients</h1>
         </header>
 
@@ -103,7 +103,7 @@ include "deletePatient.php";
                                                 Delete
                                             </a>
                                             <a href="updatePatient.php?patient_id=<?= $patient['patient_id'] ?>"
-                                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                                            class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
                                                 Update
                                             </a>
                                     </td>

@@ -111,7 +111,7 @@ include "deleteDoctor.php";
                                                 Delete
                                             </a>
                                             <a href="updateDoctor.php?doctor_id=<?= $doctor['doctor_id']?>"
-                                            class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+                                            class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-gren-700">
                                                 Update
                                             </a>
                                     </td>

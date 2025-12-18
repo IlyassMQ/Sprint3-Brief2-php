@@ -31,8 +31,8 @@ include "addDepartement.php";
     
     <main class="flex-1 ml-64 overflow-y-auto">
 
-        <header class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-10">
-            <h1 class="text-xl font-semibold text-gray-800">Patients</h1>
+        <header class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-10 bg-gray-100">
+            <h1 class="text-xl font-semibold text-gray-800">Departement</h1>
         </header>
 
         <!-- PAGE CONTENT -->
