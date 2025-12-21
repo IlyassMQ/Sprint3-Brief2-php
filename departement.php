@@ -1,6 +1,7 @@
 <?php
 include "config.php";
 include "addDepartement.php";
+require "auth.php";
 
 ?>
 
@@ -26,6 +27,11 @@ include "addDepartement.php";
             <a href="doctors.php" class="block p-3 rounded-lg hover:bg-gray-700">Doctors</a>
             
         </nav>
+        <div class="mt-auto">
+                    <a href="logout.php" class="block p-3 rounded-lg bg-red-500 hover:bg-red-600 text-white font-medium text-center">
+                        <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                    </a>
+            </div>
     </aside>
 
     

@@ -2,6 +2,7 @@
 include "config.php";
 include "addDoctor.php";
 include "deleteDoctor.php";
+require "auth.php";
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,11 @@ include "deleteDoctor.php";
             <a href="doctors.php" class="block p-3 rounded-lg bg-gray-700">Doctors</a>
             
         </nav>
+        <div class="mt-auto">
+                    <a href="logout.php" class="block p-3 rounded-lg bg-red-500 hover:bg-red-600 text-white font-medium text-center">
+                        <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                    </a>
+            </div>
     </aside>
 
     

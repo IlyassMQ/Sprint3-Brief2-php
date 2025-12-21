@@ -1,4 +1,5 @@
 <?php
+require "auth.php";
 include "config.php";
 // PATIENT DATA
 $query_patient = "SELECT COUNT(*) AS total_patients FROM patients";
@@ -57,7 +58,7 @@ $result_latest_patients = mysqli_query($conn, $query_latest_patients);
         <aside class="sidebar w-64 bg-gray-800 text-white flex flex-col p-4 fixed h-full border-r">
             <div class="text-2xl font-bold mb-6 text-indigo-400">Dashboard</div>
 
-            <nav class="space-y-2">
+            <nav class="space-y-2 flex-1">
                 <a href="index.php" class="block p-3 rounded-lg bg-gray-700 hover:bg-gray-600 font-medium">
                     <i class="fas fa-home mr-3"></i> Home
                 </a>
@@ -71,9 +72,13 @@ $result_latest_patients = mysqli_query($conn, $query_latest_patients);
 
                 <a href="doctors.php" class="block p-3 rounded-lg hover:bg-gray-700">
                     <i class="fas fa-users mr-3"></i> Doctors
-                </a>
-                
+                </a> 
             </nav>
+            <div class="mt-auto">
+                    <a href="logout.php" class="block p-3 rounded-lg bg-red-500 hover:bg-red-600 text-white font-medium text-center">
+                        <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                    </a>
+            </div>
         </aside>
 
         <main class="flex-1 overflow-y-auto ml-64">
